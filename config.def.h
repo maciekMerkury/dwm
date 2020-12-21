@@ -59,7 +59,8 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "rofi", "-show", "run" };
+static const char *dmenucmd[] = { "rofi", "-show", "drun" };
+static const char *roficmd[] = { "rofi", "-show", "run" };
 static const char *termcmd[]  = { "alacritty", NULL };
 static const char *browsercmd[] = { "brave", NULL };
 static const char *lockcmd[] = { "xlock", NULL };
@@ -67,7 +68,7 @@ static const char *lockcmd[] = { "xlock", NULL };
 #include "movestack.c"
 static Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY,                       XK_d,      spawn,          {.v = dmenucmd } },
+	{ MODKEY,                       XK_d,      spawn,          {.v = roficmd } },
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,			XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,			XK_b,      spawn,	   {.v = browsercmd } },
