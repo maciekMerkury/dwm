@@ -80,7 +80,7 @@ static const char *dmenucmd[] = { "rofi", "-show", "drun" }; /* it has to be cal
 static const char *rofishowcmd[] = { "rofi", "-show", "run" };
 
 static const char *termcmd[] = { "alacritty", NULL };
-static const char *browsercmd[] = { "brave", NULL };
+static const char *browsercmd[] = { "brave-beta", NULL };
 static const char *lockcmd[] = { "xlock", NULL };
 
 
