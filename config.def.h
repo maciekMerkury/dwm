@@ -42,7 +42,7 @@ static const Rule rules[] = {
     { "Sxiv",                   "sxiv",                 "sxiv",         0,              0,             0,               0,              -1 },
     { "Brave-browser-beta",     "brave-browser-beta",   NULL,           0 << 8,         0,             0,               0,              -1 },
     { "Zathura",                NULL,                   NULL,           0,              0,             0,               0,              -1 },
-    { "jetbrains-goland",       "jetbrains-goland",     NULL,           0,              1,             0,               1,              -1 },
+    { "jetbrains-goland",       "jetbrains-goland",     NULL,           0,              0,             0,               1,              -1 },
 };
 
 
