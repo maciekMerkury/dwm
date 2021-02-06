@@ -8,7 +8,7 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const int usealtbar          = 1;        /* 1 means use non-dwm status bar */
 static const char *altbarclass      = "Polybar"; /* Alternate bar class name */
 static const char *alttrayname      = "tray";    /* Polybar tray instance name */
-static const char *altbarcmd        = "~/bar.sh"; /* Alternate bar launch command */
+static const char *altbarcmd        = "~/.config/polybar/launch.sh"; /* Alternate bar launch command */
 static const char *fonts[]          = { "Source Code Pro:size=11" };
 static const char dmenufont[]       = "Source Code Pro:size=11";
 
