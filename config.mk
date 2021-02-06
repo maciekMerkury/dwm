@@ -9,6 +9,7 @@ MANPREFIX = ${PREFIX}/share/man
 
 X11INC = /usr/X11R6/include
 X11LIB = /usr/X11R6/lib
+X11H = /usr/include/X11/Xlib.h
 
 # Xinerama, comment if you don't want it
 #XINERAMALIBS  = -lXinerama
@@ -21,9 +22,13 @@ FREETYPEINC = /usr/include/freetype2
 #FREETYPEINC = ${X11INC}/freetype2
 #KVMLIB = -lkvm
 
+# yajl
+YAJLLIBS = -lyajl
+YAJLINC = /usr/include/yajl
+
 # includes and libs
-INCS = -I${X11INC} -I${FREETYPEINC}
-LIBS = -L${X11LIB} -lX11 ${XINERAMALIBS} ${FREETYPELIBS} -lX11-xcb -lxcb -lxcb-res ${KVMLIB}
+INCS = -I${X11INC} -I${FREETYPEINC} -I${YAJLINC}
+LIBS = -L${X11LIB} -L${X11H} -lX11 ${XINERAMALIBS} ${FREETYPELIBS} ${YAJLLIBS} -lX11-xcb -lxcb -lxcb-res
 
 # flags
 CPPFLAGS = -D_DEFAULT_SOURCE -D_POSIX_C_SOURCE=200809L -DVERSION=\"${VERSION}\" ${XINERAMAFLAGS}
